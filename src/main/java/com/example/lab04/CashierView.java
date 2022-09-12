@@ -28,9 +28,9 @@ public class CashierView extends VerticalLayout {
         b500 = new TextField();
         b500.setPrefixComponent(new Span("$500: "));
         b100 = new TextField();
-        b100.setPrefixComponent(new Span("$200: "));
+        b100.setPrefixComponent(new Span("$100: "));
         b20 = new TextField();
-        b20.setPrefixComponent(new Span("$100: "));
+        b20.setPrefixComponent(new Span("$20: "));
         b10 = new TextField();
         b10.setPrefixComponent(new Span("$10: "));
         b5 = new TextField();
@@ -51,7 +51,7 @@ public class CashierView extends VerticalLayout {
                     .block();
             try {
                 List<Change> c = Arrays.asList(mapper.readValue(out, Change[].class));
-                b1000.setValue(c.get(0).getB1000() + "");
+                b1000.setValue(c.get(0).getB1000()+ "");
                 b500.setValue(c.get(0).getB500() + "");
                 b100.setValue(c.get(0).getB100() + "");
                 b20.setValue(c.get(0).getB20() + "");
