@@ -3,6 +3,7 @@ package com.example.lab04;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Component
 public class Change implements Serializable {
